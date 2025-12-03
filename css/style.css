@@ -1,0 +1,160 @@
+/* ===== Base Styles (Common for All Devices) ===== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: all 0.3s ease-in-out;
+}
+
+.app-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+.form-title {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.form-control {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.btn-custom {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #0078ff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-custom:hover {
+  background: #0056cc;
+}
+
+.dark-mode {
+  background: linear-gradient(135deg, #1c1c1c, #121212);
+}
+
+.dark-mode .login-card {
+  background: rgba(40, 40, 40, 0.85);
+}
+
+.dark-mode .form-title,
+.dark-mode a {
+  color: #ddd;
+}
+
+.dark-mode .btn-custom {
+  background: #333;
+}
+
+/* ===== Desktop UI (Laptop / Large Screen) ===== */
+@media (min-width: 768px) {
+  .login-card {
+    width: 420px;
+    padding: 40px;
+  }
+
+  .form-title {
+    font-size: 2rem;
+  }
+
+  .btn-custom {
+    font-size: 1.1rem;
+    padding: 16px;
+  }
+}
+
+/* ===== Mobile UI (Phone) ===== */
+@media (max-width: 767px) {
+  body {
+    padding: 20px;
+    align-items: flex-start;
+  }
+
+  .login-card {
+    width: 100%;
+    margin-top: 60px;
+    border-radius: 15px;
+    padding: 25px 20px;
+  }
+
+  .form-title {
+    font-size: 1.5rem;
+  }
+
+  .form-control {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  .btn-custom {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .dark-mode-toggle {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: none;
+    background: #0078ff;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

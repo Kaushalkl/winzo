@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url("Bg.png") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#playerSelection {
+  margin: 50px auto;
+  width: 320px;
+  background: rgba(255,255,255,0.9);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+}
+
+.selector {
+  margin: 10px 0;
+}
+
+#startGame {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #ff9800;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#startGame:hover {
+  background: #e68900;
+}
+
+#gameBoard {
+  margin-top: 20px;
+}

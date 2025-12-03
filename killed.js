@@ -1,0 +1,1 @@
+let killed = false;
